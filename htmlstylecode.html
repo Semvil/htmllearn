@@ -1,0 +1,129 @@
+<!--Always Declare Document Type
+Always declare the document type as the first line in your document.
+
+The correct document type for HTML is:
+
+<!DOCTYPE html>-->
+
+<!--Use Lowercase Element Names
+HTML allows mixing uppercase and lowercase letters in element names.
+
+However, we recommend using lowercase element names, because:
+
+Mixing uppercase and lowercase names looks bad
+Developers normally use lowercase names
+Lowercase looks cleaner
+Lowercase is easier to write-->
+
+<!--Close All HTML Elements
+In HTML, you do not have to close all elements (for example the <p> element).
+
+However, we strongly recommend closing all HTML elements, like this:-->
+
+<!--Use Lowercase Attribute Names
+HTML allows mixing uppercase and lowercase letters in attribute names.
+
+However, we recommend using lowercase attribute names, because:
+
+Mixing uppercase and lowercase names looks bad
+Developers normally use lowercase names
+Lowercase look cleaner
+Lowercase are easier to write-->
+
+<!--Always Quote Attribute Values
+HTML allows attribute values without quotes.
+
+However, we recommend quoting attribute values, because:
+
+Developers normally quote attribute values
+Quoted values are easier to read
+You MUST use quotes if the value contains spaces-->
+
+
+<!--Always Specify alt, width, and height for Images
+Always specify the alt attribute for images. This attribute is important if the image for some reason cannot be displayed.
+
+Also, always define the width and height of images. This reduces flickering, because the browser can reserve space for the image before loading.-->
+
+
+<!--Spaces and Equal Signs
+HTML allows spaces around equal signs. But space-less is easier to read and groups entities better together.-->
+
+
+<!--Spaces and Equal Signs
+HTML allows spaces around equal signs. But space-less is easier to read and groups entities better together.-->
+
+
+<!--Blank Lines and Indentation
+Do not add blank lines, spaces, or indentations without a reason.
+
+For readability, add blank lines to separate large or logical code blocks.
+
+For readability, add two spaces of indentation. Do not use the tab key.-->
+
+
+<!--Add the lang Attribute
+You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.-->
+
+
+<!--Add the lang Attribute
+You should always include the lang attribute inside the <html> tag, to declare the language of the Web page. This is meant to assist search engines and browsers.-->
+
+
+
+<!--Meta Data
+To ensure proper interpretation and correct search engine indexing, both the language and the character encoding <meta charset="charset"> should be defined as early as possible in an HTML document:-->
+
+<!--Setting The Viewport
+The viewport is the user's visible area of a web page. It varies with the device - it will be smaller on a mobile phone than on a computer screen.
+
+You should include the following <meta> element in all your web pages:
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+This gives the browser instructions on how to control the page's dimensions and scaling.
+
+The width=device-width part sets the width of the page to follow the screen-width of the device (which will vary depending on the device).
+
+The initial-scale=1.0 part sets the initial zoom level when the page is first loaded by the browser.
+
+Here is an example of a web page without the viewport meta tag, and the same web page with the viewport meta tag:-->
+
+
+<!--Using Style Sheets
+Use simple syntax for linking to style sheets (the type attribute is not necessary):
+
+<link rel="stylesheet" href="styles.css">
+Short CSS rules can be written compressed, like this:
+
+p.intro {font-family:Verdana;font-size:16em;}
+Long CSS rules should be written over multiple lines:
+
+body {
+  background-color: lightgrey;
+  font-family: "Arial Black", Helvetica, sans-serif;
+  font-size: 16em;
+  color: black;
+}
+Place the opening bracket on the same line as the selector
+Use one space before the opening bracket
+Use two spaces of indentation
+Use semicolon after each property-value pair, including the last
+Only use quotes around values if the value contains spaces
+Place the closing bracket on a new line, without leading spaces-->
+
+<!--Loading JavaScript in HTML
+Use simple syntax for loading external scripts (the type attribute is not necessary):
+
+<script src="myscript.js">-->
+
+<!--Use Lower Case File Names
+Some web servers (Apache, Unix) are case sensitive about file names: "london.jpg" cannot be accessed as "London.jpg".
+
+Other web servers (Microsoft, IIS) are not case sensitive: "london.jpg" can be accessed as "London.jpg".
+
+If you use a mix of uppercase and lowercase, you have to be aware of this.
+
+If you move from a case-insensitive to a case-sensitive server, even small errors will break your web!
+
+To avoid these problems, always use lowercase file names!-->
+

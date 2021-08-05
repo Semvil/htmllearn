@@ -1,0 +1,59 @@
+<form action="htmlforms.html" method="GET" autocomplete="on">
+<label for="CS">Counter strike</label><br>
+<input type="text" id='CS'><br>
+<input type="submit"><br>
+
+</form>
+
+
+
+<!--HTTP-методы GET и POST — самые распространённые способы отправить или получить данные с сервера. Но в разных случаях оба метода могут быть небезопасными или неудобными в использовании. В этой заметке рассмотрим, какой метод когда использовать.
+
+GET — метод для чтения данных с сайта. Например, для доступа к указанной странице. Он говорит серверу, что клиент хочет прочитать указанный документ. На практике этот метод используется чаще всего, например, в интернет-магазинах на странице каталога. Фильтры, которые выбирает пользователь, передаются через метод GET.
+
+:authority: htmlacademy.ru
+:method: GET
+:path: /tutorial/php/http-header
+POST — метод для отправки данных на сайт. Чаще всего с помощью метода POST передаются формы.
+
+URL-адрес запроса: https://htmlacademy.ru/consulting
+Метод запроса: POST
+Код состояния: 200
+Формат запроса
+Протокол HTTP очень прост и состоит, по сути, из двух частей — заголовков и тела запроса или ответа.
+
+Тело запроса — это информация, которую передал браузер при запросе страницы. Но тело запроса присутствует только если браузер запросил страницу методом POST. Например, если отправлена форма, то телом запроса будет содержание формы.
+
+GET для безопасных действий, POST для опасных
+Говоря совсем просто, GET-запросы лучше не использовать с приватной информацией. Вот почему:
+
+Они кэшируются. Это значит, что логин и пароль, переданные через GET-запрос, могут остаться в интернете навсегда, например, в веб-архиве или кэше Гугла.
+Остаются в истории браузера. Чтобы узнать, какие данные отправлялись, достаточно нажать Ctrl+H.
+Сохраняются в закладках и пересылаются. Можно не обратить внимания и опубликовать в соцсетях или отправить ссылку с приватной информацией в GET-запросе.
+Сохраняются в логах сервера. Например, нельзя отправлять данные банковских карт через GET-запрос, так как это создаёт риски для пользователей.
+Таким образом, любые важные данные — логины, пароли, данные карты, персональные данные — лучше передавать с помощью метода POST. Также метод POST поддерживает тип кодирования данных multipart/form-data, что позволяет передавать файлы.
+
+Ещё раз коротко
+GET
+
+Фильтры в интернет-магазинах
+Передача параметров через ссылку
+Другие безопасные запросы
+POST
+
+Любые формы с паролями или банковскими картами
+Формы заявок с персональными данными
+Отправка файлов
+-->
+
+
+<!--accept-charset	Specifies the character encodings used for form submission
+action	Specifies where to send the form-data when a form is submitted
+autocomplete	Specifies whether a form should have autocomplete on or off
+enctype	Specifies how the form-data should be encoded when submitting it to the server (only for method="post")
+method	Specifies the HTTP method to use when sending form-data
+name	Specifies the name of the form
+novalidate	Specifies that the form should not be validated when submitted
+rel	Specifies the relationship between a linked resource and the current document
+target	Specifies where to display the response that is received after submitting the form-->
+

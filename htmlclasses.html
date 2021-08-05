@@ -1,0 +1,68 @@
+    <style>
+    .city {
+      background-color: tomato;
+      color: white;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+    }
+    
+    #t01{
+        color: rgb(119, 46, 46);
+    }
+    #div1{
+        background-color: rgb(0, 0, 0);
+      color: white;
+      border: 2px solid black;
+      margin: 20px;
+      padding: 20px;
+    }
+    </style>
+    </head>
+    <body>
+    
+    <div id="div1">
+    <h2>London</h2>
+    <p>London is the capital of England.</p>
+    </div> 
+    
+    <div class="city">
+    <h2 id="t01">Paris</h2>
+    <p>Paris is the capital of France.</p>
+    </div>
+    
+    <div class="city">
+    <h2>Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    </div>
+
+
+
+    <h2>Use of The class Attribute in JavaScript</h2>
+<p>Click the button to hide all elements with class name "city":</p>
+
+<button onclick="myFunction()", onclick="myFunction2()">Hide elements</button>
+
+<h2 class="city">London</h2>
+<p>London is the capital of England.</p>
+
+<h2 class="city">Paris</h2>
+<p>Paris is the capital of France.</p>
+
+<h2 class="city">Tokyo</h2>
+<p>Tokyo is the capital of Japan.</p>
+
+<script>
+function myFunction() {
+  var x = document.getElementsByClassName("city");
+  for (var i = 0; i < x.length; i++) {
+    x[i].style.display = "none";
+  }
+   }
+  function myFunction2() {
+  var x = document.getElementsByClassName("city");
+  for (var i = x.length; i < 0; i--) {
+    x[i].style.display = "city";
+  }
+}
+</script>
